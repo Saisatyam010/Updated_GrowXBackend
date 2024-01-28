@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 1337;
 // const HOST = process.env.HOST || 'localhost';
 const server = http.createServer(app);
 
-server.listen(1337, function () {
+server.listen(PORT, function () {
   console.log(`Server started on ${PORT}`);
 });
 
