@@ -1,6 +1,6 @@
 const express = require('express');
 const { AdvertiserLogin, AdvertiserSignup, PublisherLogin, PublisherSignup, AffiliateLogin, AffiliateSignup, AdvertiserData } = require('../GrowXController/AuthController/AuthController');
-const { CreateCampaign,getCampaignbyUser, getAllCampaigns, updateCampaign, deleteCampaignUser, getSingleCampaignbyUser, getAllCampaignForAdmin, updateCampaignUser, updateCampaignByAdmin } = require('../GrowXController/CreateCampaignController/CreateCampaignController');
+const { CreateCampaign,getCampaignbyUser, getAllCampaigns, deleteCampaignUser, getSingleCampaignbyUser, getAllCampaignForAdmin, updateCampaignUser, updateCampaignByAdmin } = require('../GrowXController/CreateCampaignController/CreateCampaignController');
 const { campaignImagesUpload } = require('../GrowXMiddleware/Upload');
 const { authmidleware } = require('../GrowXMiddleware/AuthMiddleWare');
 const { AdminSignup, AdminLogin, ForgetPassword } = require('../GrowXController/GrowXAdminController/GrowXAdminController');
@@ -47,7 +47,7 @@ GrowXrouter.use(authmidleware)
 // User Protected Routes 
 GrowXrouter.get('/getcampaignbyuser', getCampaignbyUser)
 GrowXrouter.delete('/deletecampaigns/:id', deleteCampaignUser)
-GrowXrouter.put('/updatecampaigns/:id', updateCampaignUser)
+GrowXrouter.put('/updatecampaigns/:id', updateCampaignUser) 
 
 // Create Campaign Routes 
 GrowXrouter.post('/createcampaign',campaignImagesUpload, CreateCampaign)

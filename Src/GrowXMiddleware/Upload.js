@@ -1,5 +1,5 @@
 const multer = require('multer');
-const path = require('path');
+
 
 const userProfilePic = multer.diskStorage({
   destination: function (req, file, cb) {

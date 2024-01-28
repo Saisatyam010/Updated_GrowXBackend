@@ -5,8 +5,6 @@ const AdvertiserModal = require("../../GrowXModals/AllAuthModal/AdvertiserModal"
 const PublisherModal = require("../../GrowXModals/AllAuthModal/PublishersModal");
 const AffiliateModal = require("../../GrowXModals/AllAuthModal/AffiliateModal");
 
-const express = require("express");
-const AdminModal = require("../../GrowXModals/GrowXAdminModals/GrowXAdminModals");
 
 // Advertiser Auth
 
