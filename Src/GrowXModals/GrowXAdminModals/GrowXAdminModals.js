@@ -28,6 +28,6 @@ const adminSchema = new Schema({
 
 
 
-const AdminModal = mongoose.model(Collection.Admin, adminSchema);
+const AdminModal = mongoose.model(Collection.Manager, adminSchema);
 
 module.exports = AdminModal;
