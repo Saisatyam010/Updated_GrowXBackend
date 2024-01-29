@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Collection = require('../../GrowXConfig/Collection');
 const Schema = mongoose.Schema;
 
 const adminSchema = new Schema({
