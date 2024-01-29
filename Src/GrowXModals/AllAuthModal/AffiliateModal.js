@@ -12,7 +12,7 @@ const UserAffiliateSchema = new mongoose.Schema({
   // company: { type: String, required: [true, "Company is a required field"] },
   paymentMethod: { type: String, required: [true, "Payment Method is a required field"] },
   messenger: { type: String, required: [true, "Messenger is a required field"] },
-  messengerDetails: { type: String, required: [true, "Messengerdetails is a required field"] },
+  messengerDetails: { type: String, required: [true, "Messengerdetails is  required field"] },
 },
 { timestamps: true });
 
