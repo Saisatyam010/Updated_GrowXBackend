@@ -11,21 +11,21 @@ server.listen(PORT, function () {
   console.log(`Server started on ${PORT}`);
 });
 
-server.on("error", function (error) {
-  if (error.syscall !== "listen") {
-    throw error;
-  }
+// server.on("error", function (error) {
+//   if (error.syscall !== "listen") {
+//     throw error;
+//   }
 
-  switch (error.code) {
-    case "EACCES":
-      console.error(`Port ${PORT} requires elevated privileges`);
-      process.exit(1);
-      break;
-    case "EADDRINUSE":
-      console.error(`Port ${PORT} is already in use`);
-      process.exit(1);
-      break;
-    default:
-      throw error;
-  }
-});
+//   switch (error.code) {
+//     case "EACCES":
+//       console.error(`Port ${PORT} requires elevated privileges`);
+//       process.exit(1);
+//       break;
+//     case "EADDRINUSE":
+//       console.error(`Port ${PORT} is already in use`);
+//       process.exit(1);
+//       break;
+//     default:
+//       throw error;
+//   }
+// });
