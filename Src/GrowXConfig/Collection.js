@@ -1,5 +1,6 @@
 const Collection = {
     UserAdvertiser:"UserAdvertiser",
+    Admin:"Admin",
     UserPublisher:"UserPublisher",
     UserAffiliate:"UserAffiliate",
     CreateCampaign:"CreateCampaign",

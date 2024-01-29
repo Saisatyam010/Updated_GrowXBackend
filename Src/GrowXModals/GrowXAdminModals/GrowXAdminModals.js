@@ -23,16 +23,11 @@ const adminSchema = new Schema({
     type: String,
     required: true,
   },
-  passwordResetToken: String,
-  passwordResetExpires: Date,
+ 
 });
 
-// Method to generate and set a password reset token
-adminSchema.methods.generatePasswordResetToken = function () {
-  this.passwordResetToken = 'generate-token-here'; // Replace with your token generation logic
-  this.passwordResetExpires = Date.now() + 3600000; // Token expires in 1 hour
-};
 
-const AdminModal = mongoose.model('Admin', adminSchema);
+
+const AdminModal = mongoose.model(Collection.Admin, adminSchema);
 
 module.exports = AdminModal;
